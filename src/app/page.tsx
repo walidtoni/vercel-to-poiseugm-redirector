@@ -12,19 +12,12 @@ export default function Index() {
   const morePosts = allPosts.slice(1);
 
   return (
-    <main>
-      <Container>
-        <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
-        />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container>
-    </main>
+    <div className="p-2 sm:p-6 md:p:12 lg:p-20 text-4xl text-center space-y-8">
+      <h1>hey, we no longer use this domain, please go to:</h1>
+      <div>
+        <a href="http://poiseugm.com" target="iframe"
+          className="w-full text-blue-700"> <b>Poiseugm.com</b> </a>
+      </div>
+    </div>
   );
 }
